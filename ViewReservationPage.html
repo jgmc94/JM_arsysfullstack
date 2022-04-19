@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Jesus Mendoza-->
+<html>
+<head>
+<link href="Airline.css" rel="stylesheet" type="text/css" />
+<title>A N Airlines|View Reservation</title>
+<link rel="icon" type="image/png" href="AN_logo.jpg" />
+</head>
+
+<body>
+<!--Beginning of container-->
+<div id="Container">
+   <!--Header-->
+   <div id="Header">
+     <a href="RegisterPage.html">
+       <img src="AN_logo.jpg" alt="AN Airline Logo" />
+     </a>
+   </div>
+   <!--Bar-->
+   <div id="Bar">
+     <ul>
+       <li><a href="ViewReservationPage.html">View Reservation</a></li>
+       <li><a href="ReservePage.html">Reserve</a></li>
+       <li><a href="FindFlightPage.html">Find Flight</a></li>
+       <li><a href="RegisterPage.html">Register</a></li>
+     </ul>
+   </div>
+   <!--Form-->
+   <div id="Form">
+      <form action="vrpage.jsp" id="vrForm" method="post">
+         <fieldset>
+           <legend>Find Your Reservation</legend>
+             <lable for="ctid">Customer ID:</lable>
+               <input type="text" id="custid" name="custID" maxlength="3"/>
+             
+             <button type="submit" value="submit" form="vrForm" >
+                Submit
+             </button>
+         </fieldset>
+      </form>
+   </div>
+   <!--MainBody-->
+   <div id="MainBody">
+     <img class="mySlides" src="https://images.unsplash.com/photo-1582578598772-1a1da19d7839?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFpcnBvcnQlMjBsb3VuZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" />
+   </div>
+   <!--Footer-->
+   <div id="Footer">
+     <p>A N Airlines Inc. 
+     <br/> Terms and conditions apply to all offers and ANA benefits.
+      See specific offer for details. | Travel may be on other airlines.</p>
+   </div>
+</div>
+<!--End of container-->
+
+
+</body>
+</html>

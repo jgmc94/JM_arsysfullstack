@@ -1,0 +1,131 @@
+/*Jesus Mendoza*/
+
+body {
+	background-color:black;
+	margin-left:0;
+	margin-right:0;
+}
+
+#Container {
+	position:relative;
+	width:auto;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#Header {
+	width:auto;
+	height:50px;
+	background-color:black;
+}
+
+#Header img {
+   height:50px;
+   float:left;
+}
+
+#Bar {
+	height:60px;
+	width:auto;
+	background-color:midnightblue;
+}
+
+#Bar ul {
+	margin:0;
+	padding:0;
+}
+
+#Bar li {
+	list-style-type:none;
+	float:right;
+	display:block;
+	width:150px;
+	height:60px;
+	text-align:center;
+	line-height:55px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:17px;
+}
+
+#Bar li:Hover {
+	background-color:maroon;
+}
+
+#Bar li a {
+	text-decoration:none;
+	color:white;
+}
+
+#Form {
+	width:auto;
+	height:auto;
+	background-color:white;
+	text-align:center;
+}
+
+#Form fieldset{
+	border-color: midnightblue;
+	border-style:solid;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+}
+
+#Form legend{
+	background-color:midnightblue;
+	color: white;
+	padding: 5px 10px;
+}
+
+#Form input{
+	margin:5px;
+}
+
+#Form select{
+	margin:5px;
+}
+
+#Form button {
+	background-color:maroon;
+	color:white;
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	border-radius:50px;
+	padding:15px;
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	
+}
+
+#Form button:hover {
+	background-color:midnightblue;
+	color:gray;
+}
+
+#MainBody {
+	width:auto;
+	height:auto;
+	max-height:400px;
+}
+
+#MainBody img {
+	width:100%;
+	height:400px;
+}
+
+#Footer {
+	bottom:0;
+	position:absolute;
+	width:100%;
+	background-color:black;
+}
+
+#Footer p {
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:gray;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Jesus Mendoza-->
+<html>
+<head>
+<link href="Airline.css" rel="stylesheet" type="text/css" />
+<title>A N Airlines|Find Flight</title>
+<link rel="icon" type="image/png" href="AN_logo.jpg" />
+</head>
+
+<body>
+<!--Beginning of container-->
+<div id="Container">
+   <!--Header-->
+   <div id="Header">
+     <a href="RegisterPage.html">
+       <img src="AN_logo.jpg" alt="AN Airline Logo" />
+     </a>
+   </div>
+   <!--Bar-->
+   <div id="Bar">
+     <ul>
+       <li><a href="ViewReservationPage.html">View Reservation</a></li>
+       <li><a href="ReservePage.html">Reserve</a></li>
+       <li><a href="FindFlightPage.html">Find Flight</a></li>
+       <li><a href="RegisterPage.html">Register</a></li>
+     </ul>
+   </div>
+   <!--Form-->
+   <div id="Form">
+      <form action="ffpage.jsp" id="ffForm" method="post">
+         <fieldset>
+           <legend>Flight Specifications</legend>
+             <lable for="src">From:</lable>
+			  <select name="from" id="src">
+				<option value="AA1" selected>JFK</option>
+				<option value="BB1">LGA</option>
+				<option value="CC1">LAX</option>
+				<option value="DD1">PIT</option>
+				<option value="EE1">BOS</option>
+				<option value="FF1">MIA</option>
+				<option value="GG1">DFW</option>
+			  </select>
+             <lable for="dst">To:</lable> 
+			  <select name="to" id="dst">
+				<option value="AA1">JFK</option>
+				<option value="BB1">LGA</option>
+				<option value="CC1" selected>LAX</option>
+				<option value="DD1">PIT</option>
+				<option value="EE1">BOS</option>
+				<option value="FF1">MIA</option>
+				<option value="GG1">DFW</option>
+			  </select>
+             <lable for="dt">Date:</lable>
+			    <input type="text" id="dT" name="dt" maxlength="11" placeholder="01-JAN-2022"/>
+                <br/>
+             <button type="submit" value="submit" form="ffForm" onclick= "validateForm()">
+                Submit
+             </button>
+         </fieldset>
+      </form>
+   </div>
+   <!--MainBody-->
+   <div id="MainBody">
+     <img class="mySlides" src="https://media.istockphoto.com/photos/passenger-airplane-flying-above-clouds-during-sunset-picture-id155439315?b=1&k=20&m=155439315&s=170667a&w=0&h=N2BzlH2GYabhWN0LXZTqTkVODuTb8qDAESQYCPzIig8=" />
+   </div> <!--extra image (https://www.telegraph.co.uk/content/dam/Travel/2018/January/white-plane-sky.jpg?imwidth=680)-->
+   
+<script>
+function validateForm() {
+    if (document.forms["ffForm"]["dt"].value == "" || document.forms["ffForm"]["dt"].value == null) {
+      return false;
+      alert('wah');
+    }
+  
+    else{
+        alert('Please be sure to remember the flight number' + 
+             ' as it will be needed later during the reservation process!');
+    }
+}
+</script>
+   <!--Footer-->
+   <div id="Footer">
+     <p>A N Airlines Inc. 
+     <br/> Terms and conditions apply to all offers and ANA benefits.
+      See specific offer for details. | Travel may be on other airlines.</p>
+   </div>
+</div>
+<!--End of container-->
+
+
+</body>
+</html>
